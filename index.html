@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Bitar — Web Design for Small Businesses in Edmonton</title>
+  <meta name="description" content="Alex Bitar is a solo web designer in Edmonton helping small and local businesses get professional, affordable websites. Clear pricing, simple process, and support after launch." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alex Bitar — Web Design for Small Businesses in Edmonton" />
+  <meta property="og:description" content="One person, plain language, and I stick around after it's live." />
+  <meta property="og:url" content="https://yoursite.ca" />
+  <meta property="og:image" content="/images/og-image.png" />
+
+  <!-- Preconnect for Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: Plus Jakarta Sans + Source Serif 4 -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+
+      <a href="#" class="nav__logo" aria-label="Alex Bitar — Home">
+        Alex <span class="nav__logo-last">Bitar</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="btn btn-primary nav__cta">Get in touch</a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button
+        class="nav__hamburger"
+        id="nav-hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="#services" class="nav__mobile-link">Services</a>
+        <a href="#how-it-works" class="nav__mobile-link">How It Works</a>
+        <a href="#portfolio" class="nav__mobile-link">Portfolio</a>
+        <a href="#about" class="nav__mobile-link">About</a>
+        <a href="#contact" class="btn btn-primary nav__mobile-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" class="section section--hero">
+    <div class="container hero__inner">
+
+      <div class="hero__content">
+        <h1 class="hero__headline">You run your business. I'll handle your website.</h1>
+        <p class="hero__subheadline">I work with small and local businesses in Edmonton — one person, plain language, and I stick around after it's live.</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#portfolio" class="btn btn-ghost">See my work</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="browser-mockup">
+          <div class="browser-mockup__chrome">
+            <div class="browser-mockup__dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="browser-mockup__url-bar"></div>
+          </div>
+          <div class="browser-mockup__screen"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section id="services" class="section section--surface">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <h2>Here's exactly what you get</h2>
+        <p class="section-intro">Here's exactly what I build, what's included, and what it typically costs — no surprises.</p>
+      </div>
+
+      <!-- Service cards grid -->
+      <div class="services-grid">
+
+        <!-- Card 1: New Website -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i data-lucide="monitor"></i>
+          </div>
+          <h3 class="service-card__title">New Website</h3>
+          <p class="service-card__price">$1,500–$3,500</p>
+          <p class="service-card__tagline">A professional website for your business — built from scratch, works on phones, and ready to get you calls.</p>
+          <ul class="service-card__list">
+            <li>Custom design matched to your business (not a template with your logo slapped on)</li>
+            <li>Up to 5 pages — Home, About, Services, Contact, plus one more of your choice</li>
+            <li>Mobile-friendly — looks right on phones, tablets, and desktops</li>
+            <li>Contact form that sends inquiries straight to your email or phone</li>
+            <li>Basic Google setup so people searching for your business can actually find you</li>
+            <li>I handle the whole launch — domain, hosting, going live. You don't touch anything technical</li>
+          </ul>
+          <p class="service-card__timeline">Usually ready in 2–3 weeks</p>
+        </article>
+
+        <!-- Card 2: Website Refresh -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i data-lucide="refresh-cw"></i>
+          </div>
+          <h3 class="service-card__title">Website Refresh</h3>
+          <p class="service-card__price">$1,000–$2,500</p>
+          <p class="service-card__tagline">Your current site, but updated — so you're not embarrassed to share the link anymore.</p>
+          <ul class="service-card__list">
+            <li>Full redesign of your existing site with a clean, modern look</li>
+            <li>Updated content — new photos, current services, correct contact info</li>
+            <li>Mobile-friendly layout (if your current site isn't, this fixes that)</li>
+            <li>Speed improvements — if your site is slow, I figure out why and fix it</li>
+            <li>Same domain, same address — your customers won't notice the switch, just the upgrade</li>
+          </ul>
+          <p class="service-card__timeline">1–2 weeks for most projects</p>
+        </article>
+
+        <!-- Card 3: Monthly Maintenance -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="service-card__title">Monthly Maintenance</h3>
+          <p class="service-card__price">$75–$150/month</p>
+          <p class="service-card__tagline">I keep your site updated, secure, and running — so you never have to think about it.</p>
+          <ul class="service-card__list">
+            <li>Software and security updates applied every month</li>
+            <li>Regular backups of your entire site (if something breaks, I can restore it)</li>
+            <li>Small content changes included — new phone number, updated hours, a new photo, a new staff member</li>
+            <li>Monthly check that everything is working: forms, links, load speed</li>
+            <li>Priority response — if something breaks, you text me and I handle it</li>
+          </ul>
+          <p class="service-card__timeline">Ongoing — cancel anytime with 30 days notice</p>
+        </article>
+
+        <!-- Card 4: One-Off Fixes -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i data-lucide="wrench"></i>
+          </div>
+          <h3 class="service-card__title">One-Off Fixes &amp; Updates</h3>
+          <p class="service-card__price">$150–$500 per task</p>
+          <p class="service-card__tagline">You need something specific fixed or changed on your site — I'll take care of it without a long-term commitment.</p>
+          <ul class="service-card__list">
+            <li>Whatever you need done: update content, fix a broken page, add a new section, swap out photos, fix mobile layout issues</li>
+            <li>A clear quote before I start — you'll know exactly what it costs before I touch anything</li>
+            <li>Quick turnaround for small changes (usually 1–3 business days)</li>
+          </ul>
+          <div class="service-card__examples">
+            <p class="service-card__examples-label">Common examples:</p>
+            <ul class="service-card__examples-list">
+              <li><span>Update text, photos, or contact info</span><strong>$150–$200</strong></li>
+              <li><span>Add a new page or section</span><strong>$200–$400</strong></li>
+              <li><span>Fix a broken form, layout issue, or mobile problem</span><strong>$150–$300</strong></li>
+              <li><span>Speed up a slow site</span><strong>$250–$500</strong></li>
+            </ul>
+          </div>
+          <p class="service-card__timeline">Most fixes done within 1–3 business days</p>
+        </article>
+
+      </div><!-- /.services-grid -->
+
+      <!-- Comparison table -->
+      <div class="comparison-section">
+        <h3 class="comparison-title">Hiring me vs. doing it yourself vs. an agency</h3>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">DIY (Wix, Squarespace)</th>
+                <th scope="col" class="comparison-highlight">Me (Solo freelancer)</th>
+                <th scope="col">Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Cost</th>
+                <td>$20–$50/month (plus your time)</td>
+                <td class="comparison-highlight">$1,500–$3,500 one-time</td>
+                <td>$5,000–$15,000+</td>
+              </tr>
+              <tr>
+                <th scope="row">Who does the work</th>
+                <td>You</td>
+                <td class="comparison-highlight">I do — you approve</td>
+                <td>A team you'll rarely talk to directly</td>
+              </tr>
+              <tr>
+                <th scope="row">Timeline</th>
+                <td>Depends on your free time</td>
+                <td class="comparison-highlight">2–3 weeks</td>
+                <td>4–8 weeks (or more)</td>
+              </tr>
+              <tr>
+                <th scope="row">Design</th>
+                <td>Template — looks like everyone else</td>
+                <td class="comparison-highlight">Custom to your business</td>
+                <td>Custom, but built by committee</td>
+              </tr>
+              <tr>
+                <th scope="row">Changes after launch</th>
+                <td>You figure it out</td>
+                <td class="comparison-highlight">You text me, I handle it</td>
+                <td>Submit a ticket, wait in line</td>
+              </tr>
+              <tr>
+                <th scope="row">Who you talk to</th>
+                <td>A help article</td>
+                <td class="comparison-highlight">Me, directly</td>
+                <td>A project manager (maybe)</td>
+              </tr>
+              <tr>
+                <th scope="row">You own everything</th>
+                <td>Sort of — tied to the platform</td>
+                <td class="comparison-highlight">Yes, fully</td>
+                <td>Depends on the contract</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="comparison-honest-take">
+          <p><strong>DIY might be right for you if</strong> you have the time, you're comfortable with technology, and your business doesn't depend on looking polished online. Wix and Squarespace are solid tools — I won't pretend otherwise.</p>
+          <p><strong>An agency might be right for you if</strong> you need something complex — e-commerce with hundreds of products, a booking system with multiple staff calendars, or a site that integrates with custom business software. That's not what I do, and I'll tell you upfront if your project needs more than a solo freelancer.</p>
+          <p><strong>I'm the right fit if</strong> you want a professional site without the agency price tag, you want to deal with one person who actually builds the thing, and you don't want to learn how to update a website yourself. Most small and local businesses land here.</p>
+        </div>
+      </div><!-- /.comparison-section -->
+
+      <!-- FAQ accordion -->
+      <div class="faq-section">
+        <h3 class="faq-title">Common questions</h3>
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary class="faq-question">What if I need changes after the site is done?</summary>
+            <div class="faq-answer">
+              <p>That's what I'm here for. If you're on a maintenance plan, small changes are included. If not, I do one-off updates — just tell me what you need and I'll give you a price before I start. Either way, you're not stuck.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Do I own my website?</summary>
+            <div class="faq-answer">
+              <p>Yes, completely. Your domain, your hosting, your content, your code. If you ever want to take your site to someone else, you can — no strings, no fees, no hostage situation.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What about hosting?</summary>
+            <div class="faq-answer">
+              <p>I'll set up hosting for you as part of the build. For most small business sites, hosting runs about $10–$20/month. I'll recommend a reliable, affordable option — you pay the host directly, so you always control the account.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How long does it take?</summary>
+            <div class="faq-answer">
+              <p>A new site typically takes 2–3 weeks from our first conversation to launch. A refresh is usually 1–2 weeks. The biggest variable is how quickly you can get me your content (photos, text, logo). I won't hold up your project on my end.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What do you need from me?</summary>
+            <div class="faq-answer">
+              <p>Your logo (if you have one), any photos you want on the site, and a rough idea of what pages you need. If you don't have that stuff figured out, I'll walk you through it — that's part of the process. You won't need to write anything or make technical decisions.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What if I already have a WordPress site?</summary>
+            <div class="faq-answer">
+              <p>I can work with it. If your current site just needs a facelift, I'll redesign it in place. If it's beyond saving — slow, bloated with plugins, running on outdated software — I'll recommend starting fresh and explain why. I'll look at your site and give you an honest recommendation before you spend a dollar.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Can I update the site myself?</summary>
+            <div class="faq-answer">
+              <p>If you want to, yes — I can set it up so you can make basic changes. But most of my clients prefer to just text me what they need changed and let me handle it. Either way works.</p>
+            </div>
+          </details>
+
+        </div><!-- /.faq-list -->
+      </div><!-- /.faq-section -->
+
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+  ============================================================ -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>What happens when you hire me</h2>
+        <p class="section-intro">If you've never hired a web designer before, here's what the whole process looks like from first message to launch day.</p>
+      </div>
+
+      <div class="process-steps">
+
+        <article class="process-step reveal">
+          <div class="process-number" aria-hidden="true">1</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">We Talk</h3>
+            <p class="process-step__description">Send me a message and tell me what your business needs — that's the whole first step.</p>
+            <p class="process-step__you"><strong>What you do:</strong> Describe your business in your own words. No document or brief required — a quick message or short call is enough.</p>
+          </div>
+        </article>
+
+        <article class="process-step reveal">
+          <div class="process-number" aria-hidden="true">2</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">I Send You a Plan</h3>
+            <p class="process-step__description">You get a clear outline of what I'll build and what it'll cost — no surprises.</p>
+            <p class="process-step__you"><strong>What you do:</strong> Read it over, ask any questions, and give me the go-ahead when you're ready.</p>
+          </div>
+        </article>
+
+        <article class="process-step reveal">
+          <div class="process-number" aria-hidden="true">3</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">I Build It</h3>
+            <p class="process-step__description">I build your site and share it with you before anything goes live.</p>
+            <p class="process-step__you"><strong>What you do:</strong> Look it over and tell me what you'd change. One round of revisions is included — if something's not right, we fix it.</p>
+          </div>
+        </article>
+
+        <article class="process-step reveal">
+          <div class="process-number" aria-hidden="true">4</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">You're Live — and I'm Still Here</h3>
+            <p class="process-step__description">Your site launches, and I stay available for updates and questions after.</p>
+            <p class="process-step__you"><strong>What you do:</strong> Nothing, unless you want updates later. If you do, just send me a message.</p>
+          </div>
+        </article>
+
+      </div><!-- /.process-steps -->
+
+      <p class="process-closing-cta">Ready to get started? <a href="#contact" class="process-closing-cta__link">Send me a message →</a></p>
+
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO
+  ============================================================ -->
+  <section id="portfolio" class="section section--surface">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Real work for real businesses</h2>
+        <p class="section-intro">Every site here was built for a real business with a real problem to solve. Read the story behind each one — if it sounds familiar, let's talk.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Card 1: Local plumbing company -->
+        <article class="portfolio-card reveal">
+          <div class="portfolio-card__frame">
+            <div class="portfolio-card__chrome">
+              <div class="browser-mockup__dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="browser-mockup__url-bar"></div>
+            </div>
+            <div class="portfolio-card__screen" aria-hidden="true">
+              <img
+                src="images/portfolio/project-1-desktop.png"
+                alt="Screenshot of the plumbing company website Alex built"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="portfolio-card__content">
+            <span class="portfolio-card__label text-label">Local Service Business</span>
+            <h3 class="portfolio-card__title">Local plumbing company — Edmonton</h3>
+            <p class="portfolio-card__copy">Their old site hadn't been updated since 2017 and wasn't showing up when people searched for plumbers in their area.</p>
+            <p class="portfolio-card__copy">I built a clean, mobile-friendly site with their services, service area, and a prominent call button on every page.</p>
+            <p class="portfolio-card__copy">Within six weeks of launch, they were getting consistent calls from Google — enough that the owner stopped using a third-party lead service.</p>
+            <a href="#" class="portfolio-card__link" target="_blank" rel="noopener noreferrer">View the site →</a>
+          </div>
+        </article>
+
+        <!-- Card 2: Health & wellness -->
+        <article class="portfolio-card reveal">
+          <div class="portfolio-card__frame">
+            <div class="portfolio-card__chrome">
+              <div class="browser-mockup__dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="browser-mockup__url-bar"></div>
+            </div>
+            <div class="portfolio-card__screen" aria-hidden="true">
+              <img
+                src="images/portfolio/project-2-desktop.png"
+                alt="Screenshot of the massage therapist website Alex built"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="portfolio-card__content">
+            <span class="portfolio-card__label text-label">Health &amp; Wellness</span>
+            <h3 class="portfolio-card__title">Local massage therapist — Edmonton</h3>
+            <p class="portfolio-card__copy">They had no website and were losing potential clients to competitors who showed up in local search — most bookings were coming through a referral app that charged a cut of every appointment.</p>
+            <p class="portfolio-card__copy">I built a clean, welcoming site with their full services and rates, a simple contact form, and clear instructions for booking so new clients could reach them directly.</p>
+            <p class="portfolio-card__copy">They filled their schedule within two months of launching and now handle all their bookings without paying a commission to a third party.</p>
+            <a href="#" class="portfolio-card__link" target="_blank" rel="noopener noreferrer">View the site →</a>
+          </div>
+        </article>
+
+      </div><!-- /.portfolio-grid -->
+
+      <!-- More projects on the way -->
+      <div class="portfolio-more">
+        <p class="portfolio-more__heading">More projects on the way.</p>
+        <p class="portfolio-more__copy">I add new work here as projects wrap up. In the meantime, reach out — I'm happy to talk through what I've built and whether I'm the right fit for what you need.</p>
+      </div>
+
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+
+      <div class="about-layout">
+
+        <div class="about-content reveal">
+          <h2 class="about-headline">I'm Alex</h2>
+          <p class="about-transition">Behind every one of those sites is one person: me.</p>
+
+          <div class="about-body">
+            <p>I'm Alex Bitar. I build websites for small businesses in Edmonton and across Alberta.</p>
+            <p>No agency overhead, no account managers, no runaround. You work directly with me — the person who actually builds your site, answers your messages, and shows up when something needs fixing.</p>
+            <p>I'm direct, I respond quickly, and I don't make things more complicated than they need to be. If you need a site that looks credible, works on a phone, and shows up when customers search — that's what I build.</p>
+          </div>
+        </div>
+
+      </div><!-- /.about-layout -->
+
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section section--dark">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="section-header">
+          <h2 class="contact-headline">Let's talk</h2>
+          <p class="contact-intro">If this sounds like what you need, the easiest next step is just sending me a message.</p>
+        </div>
+
+        <div class="contact-form-wrap">
+
+          <!-- Success message — hidden until form submits -->
+          <div class="contact-success" id="contact-success" role="alert" aria-live="polite" hidden>
+            <p><strong>Message sent.</strong> I'll get back to you within one business day.</p>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            method="POST"
+          >
+
+            <div class="form-field">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="phone" class="form-label">
+                Phone <span class="form-label-optional">(optional)</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="(780) 555-0123"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Tell me a bit about your business and what you need."
+                required
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary contact-submit">Send me a message</button>
+
+          </form>
+        </div><!-- /.contact-form-wrap -->
+
+      </div><!-- /.contact-inner -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <span class="footer__name">Alex Bitar</span>
+        <span class="footer__tagline">Web Design for Small Businesses in Edmonton</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#services" class="footer__link">Services</a>
+        <a href="#how-it-works" class="footer__link">How It Works</a>
+        <a href="#portfolio" class="footer__link">Portfolio</a>
+        <a href="#about" class="footer__link">About</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bottom container">
+      <p class="footer__copy">© 2026 Alex Bitar · Edmonton, AB</p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons (end of body for performance) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

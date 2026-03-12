@@ -716,6 +716,13 @@ small,
   border-radius: 4px 4px 0 0;
 }
 
+.browser-mockup__screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .section--hero {
     padding-top: var(--space-8);

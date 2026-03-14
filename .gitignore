@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+prompts/
+MASTER-CONTEXT.md
+VISION-PROFILE.md
+vision-prompt.md
+starter-cie-system/
+d.md
+context/
